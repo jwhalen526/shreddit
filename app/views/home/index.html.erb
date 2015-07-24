@@ -1,2 +1,113 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shreddit</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+   <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Shreddit</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Top 10 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Events</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Region <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">North East</a></li>
+            <li><a href="#">South East</a></li>
+            <li><a href="#">Midwest</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Ohio</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Missouri</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search skate spots">
+        </div>
+        <button type="submit" class="btn btn-default">Skate It</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Skate Trips</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">World Map <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">North America</a></li>
+            <li><a href="#">South America</a></li>
+            <li><a href="#">Europe</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Germany</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="jumbotron">
+  <h1>Shreddit</h1>
+  <p>Find, share and shred local spots you never knew about!</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Go Shred!</a></p>
+</div>
+
+<div class="container marketing">
+<div class="row">
+<div class="col-lg-4">
+<img class="img-square" width="140" height="140" alt="Generic placeholder image" src="https://cdn3.iconfinder.com/data/icons/gray-search-view-toolbar/512/explore-512.png">
+<h2>Find Spots</h2>
+<p>Find local spots near your location you never knew about!
+
+</p>
+<p>
+<a class="btn btn-default" role="button" href="#">View details »</a>
+</p>
+</div>
+<div class="col-lg-4">
+<img class="img-square" width="140" height="140" alt="Generic placeholder image" src="https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/512/upload.png">
+<h2>Upload</h2>
+<p>Upload your favorite spots, then users can add updates such as the current condition, recent photos and more! </p>
+<p>
+<a class="btn btn-default" role="button" href="#">View details »</a>
+</p>
+</div>
+<div class="col-lg-4">
+<img class="img-square" width="140" height="140" alt="Generic placeholder image" src="http://www.icon2s.com/img256/256x256-black-white-android-share.png">
+<h2>Share</h2>
+<p>Users can share a spot with fellow users, send invites for skate meetups, and message and comment fellow users!  </p>
+<p>
+<a class="btn btn-default" role="button" href="#">View details »</a>
+</p>
+</div>
+</div>
+
+
+
+
+
+
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+<%= yield %>
+
+</body>
+</html>
