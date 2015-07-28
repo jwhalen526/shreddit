@@ -53,6 +53,6 @@ group :development, :test do
   gem 'spring'
 
 
-  gem 'jquery-rails'
+  gem 'jquery-turbolinks'
 end
 
